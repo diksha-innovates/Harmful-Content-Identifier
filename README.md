@@ -17,3 +17,10 @@ DATASETS USED:
 ----------------------
 
 PURPOSE: One major reason is to identify harmful and not safe to work (NSFW) content from websites to avoid harrassment online, or to make web safer for use for general public. 
+
+----------------------
+
+IMAGES: No images are scraped from the web by this project - there is no scraping code in this
+repo. Every training image is streamed directly from the Hugging Face datasets listed above via
+`datasets.load_dataset(...)`; none are stored here. See `images/README.md` for dataset sources
+and how to pull a handful of local samples for inspection.
