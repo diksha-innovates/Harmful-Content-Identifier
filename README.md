@@ -57,3 +57,7 @@ matrix are computed on the validation split every epoch.
 Training also uses a class-weighted loss (the source datasets range from ~190 to tens of
 thousands of images), a learning-rate scheduler that reduces LR on a validation macro-F1
 plateau, and early stopping once macro-F1 stops improving.
+IMAGES: No images are scraped from the web by this project - there is no scraping code in this
+repo. Every training image is streamed directly from the Hugging Face datasets listed above via
+`datasets.load_dataset(...)`; none are stored here. See `images/README.md` for dataset sources
+and how to pull a handful of local samples for inspection.
